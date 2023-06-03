@@ -52,20 +52,6 @@ So grab your [HVKD] or research your own vulnerable driver and let's go.
 @echo off
 
 SETLOCAL ENABLEDELAYEDEXPANSION
-
-for /r . %%a in (*.sys) do (
-
-        set full_path=%%a
-        set filename_ext=%%~nxa
-        set filename=%%~na
-        set extension=%%~xa
-        
-        dumpbin /imports !filename_ext! | findstr /i /M %1
-
-        if !errorlevel!==0 (
-                echo !filename!
-        )
-)
 ```
 
 ```Batchfile
@@ -75,26 +61,6 @@ SETLOCAL ENABLEDELAYEDEXPANSION
 
 for /f "tokens=*" %%a in (driver_list.txt) do (
 
-    set full_path=%%a
-    set filename_ext=%%~nxa
-    set filename=%%~na
-
-    copy !full_path! C:\local_files\drivers\
-
-    signtool.exe verify /pa C:\local_files\drivers\!filename_ext!
-    
-    if !errorlevel!==0 (
-        sc stop !filename!
-        sc delete !filename!
-        echo "creating service !filename! whith path C:\local_files\drivers\!filename_ext!"
-        sc create !filename! binpath=C:\local_files\working_drivers\!filename_ext! type=kernel
-        echo "starting service !filename!"
-        echo !full_path! >> output.txt
-        sc start !filename!
-        if !errorlevel! == 0 (
-            echo !full_path! >> success.txt
-        )
-    ) 
 )
 ```
 
