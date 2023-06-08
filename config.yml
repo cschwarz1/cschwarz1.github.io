@@ -54,16 +54,12 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "blog @ luc1d security"
+    Title: "a blog about security and things"
     Content: |
       ### If we choose, we can live in a world of comforting illusion.</br>
       -- Noahm Chomsky
 
   socialIcons:
-    - name: hackerone
-      url: "https://hackerone.com/aaaaaaa"
-    - name: twitter
-      url: "https://twitter.com/"
     - name: github
       url: "https://github.com/cschwarz1"
     - name: email
