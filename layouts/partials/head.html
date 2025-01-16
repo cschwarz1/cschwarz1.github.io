@@ -73,16 +73,6 @@
 <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
 {{ end -}}
 
-{{- /* Misc */}}
-{{- if hugo.IsProduction | or (eq site.Params.env "production") }}
-  {{- if site.GoogleAnalytics }}
-    {{- template "_internal/google_analytics.html" . }}
-  {{- end -}}
-  {{- if site.Params.useCustomAnalytics }}
-    {{- partialCached "custom_analytics.html" . "custom_analytics.html" }}
-  {{- end -}}
-{{- end -}}
-
 {{- /* https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started */}}
 {{- if .Params.cover.image }}
   <meta name="twitter:card" content="summary_large_image" />
