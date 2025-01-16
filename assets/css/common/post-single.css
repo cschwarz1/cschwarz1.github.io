@@ -7,6 +7,7 @@
     margin-bottom: var(--content-gap);
 }
 
+
 .post-description {
     margin: var(--content-gap) 0;
     color: var(--secondary);
@@ -247,24 +248,26 @@ h6:hover .anchor {
     margin: 0 3px;
     padding: 4px 5px;
     border-radius: 3px;
-    font-size: .95em;
+    font-size: .90em;
     font-family: var(--monospace);
 }
 .post-content pre code {
     /* reset inline code */
     display: block;
+    line-height: 1.4; /* Adjust the line height for better spacing */
+    margin: 0; /* Remove unnecessary margins */
+    padding: 10px; /* Add uniform padding */
     color: inherit;
-    margin: auto 0;
-    padding: 15px;
     overflow-x: auto;
     border-radius: var(--radius);
     word-break: break-all;
+    font-size: .85em;
     font-family: var(--monospace);
 }
 .post-content .chroma code {
     background-color: inherit;
     font-family: var(--monospace);
-    font-size: .75em;
+    font-size: .85em;
 }
 
 .post-content blockquote {
