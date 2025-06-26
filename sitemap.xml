@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://cschwarz1.github.io/aboutme/</loc>
+    <lastmod>2025-06-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://cschwarz1.github.io/</loc>
-    <lastmod>2025-01-18T15:31:35+07:00</lastmod>
+    <lastmod>2025-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cschwarz1.github.io/posts/0x06/</loc>
     <lastmod>2025-01-18T15:31:35+07:00</lastmod>
