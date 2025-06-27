@@ -11,9 +11,10 @@ When I’m not reverse-engineering binaries or bypassing controls, I explore hig
 cognitive enhancement, and strength training. I also enjoy reading, travel, psychology, finance and exploring how humans
 and systems interact (and fail) in high-stakes environments. 
 
-I like the outdoors to help balance my digital life, i'm into skydiving and mountain biking, tinkering with electronics and repairing or optimizing various gear.
+I like the outdoors to help balance my digital life, i'm into skydiving and mountain biking, tinkering with electronics
+and repairing or optimizing various complex technical gear.
 
-I maintain this blog where I share research, insights, and reflections on security, freelancing, and operating in a rapidly evolving digital world.
+I maintain this blog where I share research, insights, and reflections on security and operating in a rapidly evolving digital world.
 
 
 
